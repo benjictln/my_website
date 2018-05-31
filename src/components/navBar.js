@@ -5,8 +5,9 @@ import './NavBar.css'
 export function NavBar() {
   return (
     <nav id="navBar">
-      <ButtonNav name="element1" />
-      <ButtonNav name="element2" />
+      <ButtonNav name="element1" link='#' />
+      <ButtonNav name="Robbie" link='https://camcamcamcamcamcam.github.io/R0B0t_MAKING/'/>
+      <ButtonNav name="My GitHub" link='https://github.com/benjictln'/>
     </nav>
   )
 }
@@ -17,6 +18,6 @@ class ButtonNav extends React.Component {
   }
   render() {
     return (
-      <a href='https://www.google.fr' className='nav-link'>{this.props.name}</a>)
+      <a href={this.props.link} className='nav-link'>{this.props.name}</a>)
   }
 }
