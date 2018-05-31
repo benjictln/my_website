@@ -3,8 +3,9 @@ import './NavBar.css'
 
 export function NavBar() {
   return (
-    <div>NavBar
+    <div id="navBar">
       <ButtonNav name="element1" />
+      <ButtonNav name="element2" />
     </div>
   )
 }
@@ -14,6 +15,6 @@ class ButtonNav extends React.Component {
     super(props);
   }
   render() {
-    return (<button>props.name</button>)
+    return (<button>{this.props.name}</button>)
   }
 }
