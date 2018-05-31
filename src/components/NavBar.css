@@ -1,18 +1,28 @@
 #navBar {
-  height: 40px;
+  height: 50px;
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: black
 }
 
-button {
-  background-color: white;
+a, a:visited{
+  background-color: black;
+  color: white;
   border: none;
-  height: inherit;
-  width: 150px;
+  width: 100px;
+  margin: 0px 20px;
+  padding: 5px 0px;
+  height: auto;
   font-size: 15px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
 }
 
-button:hover {
-  background-color: #ADD8E6;
+
+a:hover {
+  border-bottom:2px solid white;
+  margin: 2px 20px 0px 20px;
+  text-decoration: none;
 }

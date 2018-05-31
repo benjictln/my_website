@@ -1,12 +1,13 @@
 import React from 'react'
 import './NavBar.css'
 
+
 export function NavBar() {
   return (
-    <div id="navBar">
+    <nav id="navBar">
       <ButtonNav name="element1" />
       <ButtonNav name="element2" />
-    </div>
+    </nav>
   )
 }
 
@@ -15,6 +16,7 @@ class ButtonNav extends React.Component {
     super(props);
   }
   render() {
-    return (<button>{this.props.name}</button>)
+    return (
+      <a href='https://www.google.fr' className='nav-link'>{this.props.name}</a>)
   }
 }
